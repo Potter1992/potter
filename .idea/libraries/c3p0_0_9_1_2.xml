@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="c3p0-0.9.1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/c3p0-0.9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/cos-26Dec2008.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/jfinal-1.9-bin-with-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/jfinal-ext-3.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/log4j-1.2.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.20-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ojdbc6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/jfinal-1.9-bin-with-src.jar!/" />
+    </SOURCES>
+  </library>
+</component>

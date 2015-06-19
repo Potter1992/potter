@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - student_change@localhost" uuid="3f99a445-2d78-472e-b60f-4e31978f9bf3">
+    <database-info product="MySQL" version="5.1.63" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="student_change"/>
+    <table name="academy" schema="" catalog="student_change" type="TABLE">
+      <column name="academy_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5a2m6ZmiaWQ=" autoIncrement="true"/>
+      <column name="academy_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="5a2m6Zmi5ZCN56ew"/>
+      <primary-key name="PRIMARY" columns="academy_id"/>
+    </table>
+    <table name="apply_approve" schema="" catalog="student_change" type="TABLE">
+      <column name="aa_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="55Sz6K+35a6h5qC46K6w5b2V6KGo" autoIncrement="true"/>
+      <column name="s_no" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="55Sz6K+35a2m55Sf5a2m5Y+3"/>
+      <column name="aa_time" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="6K6w5b2V5pe26Ze0"/>
+      <column name="c_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5byC5Yqo57G75Z6LaWQ="/>
+      <column name="aa_current_step" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="Mg==" remarks="5b2T5YmN5a6h5qC45q2l5pWw"/>
+      <column name="aa_steps" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5oC75YWx5a6h5qC45q2l5pWw"/>
+      <primary-key name="PRIMARY" columns="aa_id"/>
+    </table>
+    <table name="approve_person" schema="" catalog="student_change" type="TABLE">
+      <column name="a_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5a6h5om55Lq6aWQ=" autoIncrement="true"/>
+      <column name="a_account" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" remarks="5a6h5om55Lq66LSi5Yqh6LSm5Y+3"/>
+      <column name="a_img" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1" remarks="5a6h5om55Lq6562+5a2X5Zu+54mH"/>
+      <column name="a_name" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5a6h5om55Lq65aeT5ZCN"/>
+      <column name="a_part" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12" remarks="5a6h5om55Lq66YOo6Zeo"/>
+      <column name="a_type" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5a6h5om55Lq65bGC5qyh"/>
+      <column name="r_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="6KeS6ImyaWQ="/>
+      <column name="a_password" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" remarks="5a6h5om55Lq65a+G56CB"/>
+      <column name="a_academy" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" def="J+aXoOWtpumZoic=" remarks="5a6h5om55Lq65omA5Zyo5a2m6Zmi"/>
+      <primary-key name="PRIMARY" columns="a_id,a_account"/>
+      <index name="a_account" unique="true" columns="a_account"/>
+    </table>
+    <table name="change_apply" schema="" catalog="student_change" type="TABLE">
+      <column name="c_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5byC5Yqo57G75Z6L" autoIncrement="true"/>
+      <column name="c_name" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5byC5Yqo5ZCN56ew"/>
+      <column name="c_number" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5byC5Yqo5q2l5pWw"/>
+      <primary-key name="PRIMARY" columns="c_id"/>
+    </table>
+    <table name="role" schema="" catalog="student_change" type="TABLE">
+      <column name="r_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6KeS6ImyaWQ=" autoIncrement="true"/>
+      <column name="r_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="6KeS6Imy5aeT5ZCN"/>
+      <column name="r_level" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="6KeS6Imy562J57qn"/>
+      <primary-key name="PRIMARY" columns="r_id"/>
+    </table>
+    <table name="role_change" schema="" catalog="student_change" type="TABLE">
+      <column name="rc_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6KeS6Imy5byC5YqodWQ=" autoIncrement="true"/>
+      <column name="r_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6KeS6ImyaWQ="/>
+      <column name="c_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5byC5YqoaWQ="/>
+      <column name="rc_sort" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6KeS6Imy5byC5Yqo6aG65bqP"/>
+      <primary-key name="PRIMARY" columns="rc_id"/>
+    </table>
+    <table name="student_apply" schema="" catalog="student_change" type="TABLE">
+      <column name="s_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5a2m55Sf55Sz6K+3aWQ=" autoIncrement="true"/>
+      <column name="s_no" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5a2m5Y+3"/>
+      <column name="s_name" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5aeT5ZCN"/>
+      <column name="s_password" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5a+G56CB"/>
+      <column name="s_sex" sqlType="VARCHAR" precision="3" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5oCn5Yir"/>
+      <column name="s_img" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1" remarks="562+5a2X5Zu+54mH"/>
+      <column name="c_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5byC5YqoaWQ="/>
+      <column name="s_before_academy" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5YmN5a2m6Zmi"/>
+      <column name="s_after_academy" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5ZCO5a2m6Zmi"/>
+      <column name="s_before_subject" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5YmN5LiT5Lia"/>
+      <column name="s_after_subject" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5ZCO5LiT5Lia"/>
+      <column name="s_before_class" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5YmN54+t57qn"/>
+      <column name="s_after_class" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5ZCO54+t57qn"/>
+      <column name="s_before_grade" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5YmN5bm057qn"/>
+      <column name="s_after_grade" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <column name="s_year" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5a2m5bm0"/>
+      <column name="s_before_subject_no" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5YmN5LiT5Lia5Luj56CB"/>
+      <column name="s_after_subject_no" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5ZCO5LiT5Lia5Luj56CB"/>
+      <column name="s_before_status" sqlType="VARCHAR" precision="4" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5YmN5a2m57GN54q25oCB"/>
+      <column name="s_after_status" sqlType="VARCHAR" precision="4" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5ZCO5a2m57GN54q25oCB"/>
+      <column name="s_before_education" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5YmN5a2m5Y6G"/>
+      <column name="s_after_education" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="J+aXoCc=" remarks="5a2m55Sf5byC5Yqo5ZCO5a2m5Y6G"/>
+      <column name="s_manager_name" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5pON5L2c5Lq65ZGY5aeT5ZCN"/>
+      <column name="s_manager_time" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5pON5L2c5pe26Ze0"/>
+      <column name="s_before_regist" sqlType="VARCHAR" precision="4" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5YmN5piv5ZCm5rOo5YaM"/>
+      <column name="s_after_regist" sqlType="VARCHAR" precision="4" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5ZCO5piv5ZCm5rOo5YaM"/>
+      <column name="s_before_school" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5YmN5piv5ZCm5Zyo5qCh"/>
+      <column name="s_after_school" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5a2m55Sf5byC5Yqo5ZCO5piv5ZCm5Zyo5qCh"/>
+      <column name="s_changetime" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5byC5Yqo5pe26Ze0"/>
+      <column name="r_level" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="J+WtpueUnyc=" remarks="6KeS6Imy57G75Z6L"/>
+      <column name="s_after_area" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" def="J+W+t+W3nuWtpumZoic=" remarks="5a2m55Sf5byC5Yqo5ZCO5a2m5qCh"/>
+      <column name="s_before_area" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" def="J+W+t+W3nuWtpumZoic=" remarks="5a2m55Sf5byC5Yqo5YmN5a2m5qCh"/>
+      <primary-key name="PRIMARY" columns="s_id"/>
+    </table>
+    <table name="subject" schema="" catalog="student_change" type="TABLE">
+      <column name="s_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5LiT5LiaaWQ=" autoIncrement="true"/>
+      <column name="s_name" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="academy_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5a2m6ZmiaWQ="/>
+      <column name="s_year" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5a2m5Yi2"/>
+      <column name="s_education" sqlType="VARCHAR" precision="8" scale="0" nullable="false" jdbcType="12" remarks="5a2m5Y6G"/>
+      <primary-key name="PRIMARY" columns="s_id"/>
+    </table>
+    <table name="xsjbxxb" schema="" catalog="student_change" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="aWQ=" autoIncrement="true"/>
+      <column name="xh" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" remarks="5a2m5Y+3"/>
+      <column name="xb" sqlType="VARCHAR" precision="4" scale="0" nullable="true" jdbcType="12"/>
+      <column name="xm" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5aeT5ZCN"/>
+      <column name="xy" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
+      <column name="xsmm" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="5a+G56CB"/>
+      <column name="sfzx" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5piv5ZCm5L2P5qCh"/>
+      <column name="sfzc" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5piv5ZCm5rOo5YaM"/>
+      <column name="cc" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5a2m5Y6G"/>
+      <column name="zydm" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5LiT5Lia5Luj56CB"/>
+      <column name="zymc" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5LiT5Lia5ZCN56ew"/>
+      <column name="zc" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5piv5ZCm5rOo5YaM"/>
+      <column name="zx" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5piv5ZCm5Zyo5qCh"/>
+      <column name="xz" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5a2m5Yi2"/>
+      <column name="dqszj" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5omA5Zyo5bm057qn"/>
+      <column name="xzb" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" remarks="5omA5Zyo54+t57qn"/>
+      <column name="xjzt" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="5a2m57GN54q25oCB"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="xydmb" schema="" catalog="student_change" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="xydm" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" remarks="5a2m6Zmi5Luj56CB"/>
+      <column name="xymc" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" remarks="5a2m6Zmi5ZCN56ew"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="zydmb" schema="" catalog="student_change" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="zydm" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" remarks="5LiT5Lia5Luj56CB"/>
+      <column name="zymc" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" remarks="5LiT5Lia5ZCN56ew"/>
+      <column name="ssxydm" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" remarks="5a2m6Zmi5Luj56CB"/>
+      <column name="cc" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5a2m5Y6G"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>
